@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/klug-brain/static/css/main.d1b05096.chunk.css",
+    "main.js": "/klug-brain/static/js/main.884be1cc.chunk.js",
+    "main.js.map": "/klug-brain/static/js/main.884be1cc.chunk.js.map",
+    "runtime-main.js": "/klug-brain/static/js/runtime-main.4d266b10.js",
+    "runtime-main.js.map": "/klug-brain/static/js/runtime-main.4d266b10.js.map",
+    "static/js/2.7c74bd65.chunk.js": "/klug-brain/static/js/2.7c74bd65.chunk.js",
+    "static/js/2.7c74bd65.chunk.js.map": "/klug-brain/static/js/2.7c74bd65.chunk.js.map",
+    "index.html": "/klug-brain/index.html",
+    "precache-manifest.baa9082bb1b165d5ec5bd12e63039882.js": "/klug-brain/precache-manifest.baa9082bb1b165d5ec5bd12e63039882.js",
+    "service-worker.js": "/klug-brain/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/klug-brain/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.7c74bd65.chunk.js.LICENSE.txt": "/klug-brain/static/js/2.7c74bd65.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/klug-brain/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d266b10.js",
+    "static/js/2.7c74bd65.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.884be1cc.chunk.js"
+  ]
+}
