@@ -1,9 +1,14 @@
 import React from 'react';
 import './facerecognition.css';
 const imgAlt = '';
-const FaceRecognition = ({ imgUrl }) => (
+const FaceRecognition = ({ imgUrl, box }) => (
   <div className="face">
-    <img className="w-30 h-auto" alt={imgAlt} src={imgUrl} />
+    <img id="inputImage" className="h-auto" alt={imgAlt} src={imgUrl} />
+
+    <div
+      className="bounding-box center"
+      style={{ top: box.topRow, right: box.rightCol, bottom: box.bottomRow, left: box.leftCol }}
+    ></div>
   </div>
 );
 
