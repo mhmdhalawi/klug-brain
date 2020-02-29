@@ -1,6 +1,6 @@
 .form-parent {
   height: 80px;
-  width: 40%;
+  width: 30%;
   margin: 30px auto;
   border-radius: 10px;
 
@@ -38,6 +38,7 @@
 
 .form {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -48,11 +49,13 @@
 .form input {
   border: none;
   border-radius: 5px;
+  width: 70%;
 }
 
 .form button {
   background-color: #24db70;
   border: none;
   border-radius: 5px;
-  margin-left: 10px;
+  margin-left: 5px;
+  text-align: center;
 }
