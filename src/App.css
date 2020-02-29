@@ -10,3 +10,8 @@
   right: 0;
   z-index: -1;
 }
+
+.main {
+  transform: translateY(-5%);
+  margin-bottom: 0;
+}

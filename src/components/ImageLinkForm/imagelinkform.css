@@ -1,6 +1,6 @@
 .form-parent {
   height: 80px;
-  width: 30%;
+  width: 35%;
   margin: 30px auto;
   border-radius: 10px;
 
@@ -42,8 +42,6 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 80%;
-  margin: 0 auto;
 }
 
 .form input {
