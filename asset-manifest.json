@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/klug-brain/static/css/main.f4021ede.chunk.css",
-    "main.js": "/klug-brain/static/js/main.f2f542dc.chunk.js",
-    "main.js.map": "/klug-brain/static/js/main.f2f542dc.chunk.js.map",
+    "main.js": "/klug-brain/static/js/main.53170e98.chunk.js",
+    "main.js.map": "/klug-brain/static/js/main.53170e98.chunk.js.map",
     "runtime-main.js": "/klug-brain/static/js/runtime-main.4d266b10.js",
     "runtime-main.js.map": "/klug-brain/static/js/runtime-main.4d266b10.js.map",
     "static/css/2.eb45ad44.chunk.css": "/klug-brain/static/css/2.eb45ad44.chunk.css",
     "static/js/2.dfb4fbd3.chunk.js": "/klug-brain/static/js/2.dfb4fbd3.chunk.js",
     "static/js/2.dfb4fbd3.chunk.js.map": "/klug-brain/static/js/2.dfb4fbd3.chunk.js.map",
     "index.html": "/klug-brain/index.html",
-    "precache-manifest.76e8cf7392cd26d4e1505c5313ee53de.js": "/klug-brain/precache-manifest.76e8cf7392cd26d4e1505c5313ee53de.js",
+    "precache-manifest.07543d9a0b86659c2eef057c8deecae8.js": "/klug-brain/precache-manifest.07543d9a0b86659c2eef057c8deecae8.js",
     "service-worker.js": "/klug-brain/service-worker.js",
     "static/css/2.eb45ad44.chunk.css.map": "/klug-brain/static/css/2.eb45ad44.chunk.css.map",
     "static/css/main.f4021ede.chunk.css.map": "/klug-brain/static/css/main.f4021ede.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.eb45ad44.chunk.css",
     "static/js/2.dfb4fbd3.chunk.js",
     "static/css/main.f4021ede.chunk.css",
-    "static/js/main.f2f542dc.chunk.js"
+    "static/js/main.53170e98.chunk.js"
   ]
 }

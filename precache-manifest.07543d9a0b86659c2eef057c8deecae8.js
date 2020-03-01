@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a15ec3cc4e6f4640dadd0ca8241645e",
+    "revision": "10da3bb3f18c5d44fa5b3eeb30638317",
     "url": "/klug-brain/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/klug-brain/static/css/2.eb45ad44.chunk.css"
   },
   {
-    "revision": "9ef98b4fea3c00e6f8f4",
+    "revision": "12698c9417b21f962f0d",
     "url": "/klug-brain/static/css/main.f4021ede.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/klug-brain/static/js/2.dfb4fbd3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9ef98b4fea3c00e6f8f4",
-    "url": "/klug-brain/static/js/main.f2f542dc.chunk.js"
+    "revision": "12698c9417b21f962f0d",
+    "url": "/klug-brain/static/js/main.53170e98.chunk.js"
   },
   {
     "revision": "f03979af90694dac6775",
