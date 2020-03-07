@@ -9,11 +9,6 @@ import FaceRecognition from './components/FaceRecognition/facerecognition';
 import Particles from 'react-particles-js';
 import './App.css';
 import particleOptions from './particles';
-import Clarifai from 'clarifai';
-
-const app = new Clarifai.App({
-  apiKey: '7e29daceb38b4c4c901caaf8414dd52d'
-});
 
 const initialState = {
   input: '',
@@ -69,23 +64,33 @@ class App extends Component {
 
   onBtnSubmit = () => {
     this.setState({ imgUrl: this.state.input });
-    app.models.predict(Clarifai.FACE_DETECT_MODEL, this.state.input).then(resp => {
-      if (resp) {
-        fetch('http://localhost:3000/image', {
-          method: 'PUT',
-          headers: {
-            'Content-type': 'application/json'
-          },
-          body: JSON.stringify({
-            id: this.state.user.id
+    fetch('http://localhost:3000/imageurl', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        input: this.state.input
+      })
+    })
+      .then(response => response.json())
+      .then(resp => {
+        if (resp) {
+          fetch('http://localhost:3000/image', {
+            method: 'PUT',
+            headers: {
+              'Content-type': 'application/json'
+            },
+            body: JSON.stringify({
+              id: this.state.user.id
+            })
           })
-        })
-          .then(resp => resp.json())
-          .then(count => this.setState(Object.assign(this.state.user, { entries: count })))
-          .catch(console.log);
-      }
-      this.displayFaceBox(this.calculateFaceLocation(resp)).catch(err => console.log(err));
-    });
+            .then(resp => resp.json())
+            .then(count => this.setState(Object.assign(this.state.user, { entries: count })))
+            .catch(console.log);
+        }
+        this.displayFaceBox(this.calculateFaceLocation(resp)).catch(err => console.log(err));
+      });
   };
 
   onRouteChange = route => {
