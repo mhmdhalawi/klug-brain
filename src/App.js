@@ -76,7 +76,7 @@ class App extends Component {
       .then(response => response.json())
       .then(resp => {
         if (resp) {
-          fetch('https://boiling-lake-71154.herokuapp.com/:3000/image', {
+          fetch('https://boiling-lake-71154.herokuapp.com/image', {
             method: 'PUT',
             headers: {
               'Content-type': 'application/json'
@@ -89,8 +89,9 @@ class App extends Component {
             .then(count => this.setState(Object.assign(this.state.user, { entries: count })))
             .catch(console.log);
         }
-        this.displayFaceBox(this.calculateFaceLocation(resp)).catch(err => console.log(err));
-      });
+        this.displayFaceBox(this.calculateFaceLocation(resp));
+      })
+      .catch(err => console.log(err));
   };
 
   onRouteChange = route => {
