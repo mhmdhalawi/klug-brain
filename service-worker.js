@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/klug-brain/precache-manifest.07543d9a0b86659c2eef057c8deecae8.js"
+  "/klug-brain/precache-manifest.e796ecf0623ac5f533a3c7e06d3bf24c.js"
 );
 
 self.addEventListener('message', (event) => {
