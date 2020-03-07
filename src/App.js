@@ -64,7 +64,7 @@ class App extends Component {
 
   onBtnSubmit = () => {
     this.setState({ imgUrl: this.state.input });
-    fetch('http://localhost:3000/imageurl', {
+    fetch('https://boiling-lake-71154.herokuapp.com/imageurl', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'
@@ -76,7 +76,7 @@ class App extends Component {
       .then(response => response.json())
       .then(resp => {
         if (resp) {
-          fetch('http://localhost:3000/image', {
+          fetch('https://boiling-lake-71154.herokuapp.com/:3000/image', {
             method: 'PUT',
             headers: {
               'Content-type': 'application/json'
