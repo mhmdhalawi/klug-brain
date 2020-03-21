@@ -13,7 +13,7 @@ import particleOptions from './particles';
 const initialState = {
   input: '',
   imgUrl: '',
-  box: {},
+  box: [],
   route: 'signin',
   isSignedIn: false,
   user: {
@@ -44,17 +44,19 @@ class App extends Component {
   };
 
   calculateFaceLocation = resp => {
-    const result = resp.outputs[0].data.regions[0].region_info.bounding_box;
-    const image = document.getElementById('inputImage');
-    const width = Number(image.width);
-    const height = Number(image.height);
+    return resp.outputs[0].data.regions.map(face => {
+      const clarifyFace = face.region_info.bounding_box;
+      const image = document.getElementById('inputImage');
+      const width = Number(image.width);
+      const height = Number(image.height);
 
-    return {
-      leftCol: result.left_col * width,
-      topRow: result.top_row * height,
-      rightCol: width - result.right_col * width,
-      bottomRow: height - result.bottom_row * height
-    };
+      return {
+        leftCol: clarifyFace.left_col * width,
+        topRow: clarifyFace.top_row * height,
+        rightCol: width - clarifyFace.right_col * width,
+        bottomRow: height - clarifyFace.bottom_row * height
+      };
+    });
   };
 
   displayFaceBox = box => {
